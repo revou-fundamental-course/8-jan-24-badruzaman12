@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator Matematik Persegi</title>
+</head>
+
+<body>
+
+    <div class="calculator-container">
+        <h1>Hitunglah Luas Persegi</h1>
+        <div id="formula-container">
+            <p>Rumus Luas Persegi: <span>L = S x S</span></p>
+            <p>Dimana: <br>
+                L = Luas <br>
+                S = Sisi</p>
+        </div>
+
+        <div id="image-container">
+            <img src="images/bujur.jpeg" alt="Bujur Sangkar">
+        </div>
+        <form id="calculator-form">
+            <label for="sideLength">Panjang Sisi:</label>
+            <input type="number" id="sideLength" name="sideLength" required>
+
+            <button type="button" onclick="calculate()">Hitung</button>
+            <button type="button" onclick="resetForm()">Reset</button>
+        </form>
+
+        <div id="result-container">
+            <p id="resultLuas">Luas: <span id="luasResult">-</span></p>
+            <p id="resultKeliling">Keliling: <span id="kelilingResult">-</span></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
